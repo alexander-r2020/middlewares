@@ -10,11 +10,22 @@
 			font-family: sans-serif;
 			background-color: #dddddd;
 		}
+		a{
+			text-decoration: none;
+			font-size: 35px;
+			padding: 30px;
+			color: black;
+		}
+		a:hover{
+			color: white;
+			background-color: tomato;
+		}
 		h1 {
 			font-size: 3.2em;
 		}
 		h2 {
 			font-size: 2.4em;
+			margin-bottom: 40px;
 		}
 		pre {
 			color: crimson;
@@ -33,9 +44,12 @@
 	</style>
 </head>
 <body>
-	<h1><%= message %></h1>
-	<h2><%= error.status %></h2>
-	<p>Error trying to access to: <b><%= path %></b></p>
-	<pre><i><%= error.stack %></i></pre>
+	<h1>Si usted llego aqui, quizas es porque no existe</h1>
+	<h2>Que desea hacer: </h2>
+	<a href="/">Home</a>
+	<a href="/users/login">Login</a>
+	<a href="/users/register">Register</a>
+	<!-- <p>Error trying to access to: <b><%= path %></b></p>
+	<pre><i><%= error.stack %></i></pre> -->
 </body>
 </html>
